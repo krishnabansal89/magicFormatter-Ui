@@ -1,4 +1,13 @@
+"use client";
+
+
+
 export default function SignInPage() {
+  const handleGoogleSignIn = async () => {
+    // Handle Google Sign-In logic here
+    window.location.href = 'http://localhost:3000/auth/google';
+
+  }
     return (
       <section id="signin-page" className="min-h-screen bg-neutral-900 relative overflow-hidden">
         {/* Background Pattern */}
@@ -10,7 +19,7 @@ export default function SignInPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             {/* Left Side: Magic Formatter Info */}
-            <div className="w-full md:w-1/2 animate__animated animate__fadeIn">
+            <div className="w-full mt-8 md:w-1/2 animate__animated animate__fadeIn">
               <div className="max-w-lg">
                 {/* Logo/Branding */}
                 <div className="mb-8">
@@ -56,12 +65,12 @@ export default function SignInPage() {
             </div>
             
             {/* Right Side: Sign In Form */}
-            <div className="w-full md:w-1/2 animate__animated animate__fadeIn animate__delay-1s">
+            <div className="w-full md:w-1/2 animate__animated animate__fadeIn animate__delay-1s z-50">
               <div className="bg-neutral-800 p-8 rounded-xl shadow-2xl max-w-md mx-auto">
                 <h2 className="text-2xl font-bold text-white mb-6 text-center">Sign in to continue</h2>
                 
                 {/* Google Sign In Button */}
-                <button className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-4 rounded-lg transition-all duration-300 mb-6">
+                <button className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-4 rounded-lg transition-all duration-300 mb-6 cursor-wait" onClick={handleGoogleSignIn}>
                   <svg className="w-5 h-5" viewBox="0 0 24 24">
                     <path
                       d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -156,7 +165,7 @@ export default function SignInPage() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 120"
-            className="w-full h-[60px] fill-neutral-800"
+            className="w-full h-[8vw] fill-neutral-800"
           >
             <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
           </svg>
