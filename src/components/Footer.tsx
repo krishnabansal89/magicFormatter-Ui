@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 
 interface FooterLink {
   label: string;
@@ -7,8 +7,8 @@ interface FooterLink {
 }
 
 const Footer: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  // const [email, setEmail] = useState('');
+  // const [isSubscribed, setIsSubscribed] = useState(false);
 
   const productLinks: FooterLink[] = [
     { label: 'Features', href: '#features' },
@@ -24,16 +24,16 @@ const Footer: React.FC = () => {
     { label: 'Contact', href: '#' }
   ];
 
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      // Add your newsletter subscription logic here
-      setIsSubscribed(true);
-      setEmail('');
-    } catch (error) {
-      console.error('Subscription failed:', error);
-    }
-  };
+  // const handleSubscribe = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   try {
+  //     // Add your newsletter subscription logic here
+  //     setIsSubscribed(true);
+  //     setEmail('');
+  //   } catch (error) {
+  //     console.error('Subscription failed:', error);
+  //   }
+  // };
 
   return (
     <footer className="bg-neutral-800 py-16">

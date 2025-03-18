@@ -1,67 +1,67 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 
-interface PricingTier {
-    name: string;
-    monthlyPrice: number;
-    yearlyPrice: number;
-    description: string;
-    features: string[];
-    ctaText: string;
-    ctaLink: string;
-    highlighted?: boolean;
-}
+// interface PricingTier {
+//     name: string;
+//     monthlyPrice: number;
+//     yearlyPrice: number;
+//     description: string;
+//     features: string[];
+//     ctaText: string;
+//     ctaLink: string;
+//     highlighted?: boolean;
+// }
 
 const Pricing: React.FC = () => {
-    const [isYearly, setIsYearly] = useState(false);
+    // const [isYearly, setIsYearly] = useState(false);
 
-    const pricingTiers: PricingTier[] = [
-        {
-            name: "Free",
-            monthlyPrice: 0,
-            yearlyPrice: 0,
-            description: "Perfect for trying out MagicFormatter.ai",
-            features: [
-                "5 documents per month",
-                "Basic formatting",
-                "Export to PDF",
-                "Email support"
-            ],
-            ctaText: "Get Started",
-            ctaLink: "#betaprogram"
-        },
-        {
-            name: "Pro",
-            monthlyPrice: 29,
-            yearlyPrice: 290,
-            description: "For professionals and small teams",
-            features: [
-                "Unlimited documents",
-                "Advanced formatting",
-                "Priority support",
-                "Team collaboration",
-                "Custom templates"
-            ],
-            ctaText: "Start Free Trial",
-            ctaLink: "#betaprogram",
-            highlighted: true
-        },
-        {
-            name: "Enterprise",
-            monthlyPrice: 99,
-            yearlyPrice: 990,
-            description: "For large organizations",
-            features: [
-                "Everything in Pro",
-                "Dedicated support",
-                "API access",
-                "Custom branding",
-                "Custom integration"
-            ],
-            ctaText: "Contact Sales",
-            ctaLink: "#betaprogram"
-        }
-    ];
+    // const pricingTiers: PricingTier[] = [
+    //     {
+    //         name: "Free",
+    //         monthlyPrice: 0,
+    //         yearlyPrice: 0,
+    //         description: "Perfect for trying out MagicFormatter.ai",
+    //         features: [
+    //             "5 documents per month",
+    //             "Basic formatting",
+    //             "Export to PDF",
+    //             "Email support"
+    //         ],
+    //         ctaText: "Get Started",
+    //         ctaLink: "#betaprogram"
+    //     },
+    //     {
+    //         name: "Pro",
+    //         monthlyPrice: 29,
+    //         yearlyPrice: 290,
+    //         description: "For professionals and small teams",
+    //         features: [
+    //             "Unlimited documents",
+    //             "Advanced formatting",
+    //             "Priority support",
+    //             "Team collaboration",
+    //             "Custom templates"
+    //         ],
+    //         ctaText: "Start Free Trial",
+    //         ctaLink: "#betaprogram",
+    //         highlighted: true
+    //     },
+    //     {
+    //         name: "Enterprise",
+    //         monthlyPrice: 99,
+    //         yearlyPrice: 990,
+    //         description: "For large organizations",
+    //         features: [
+    //             "Everything in Pro",
+    //             "Dedicated support",
+    //             "API access",
+    //             "Custom branding",
+    //             "Custom integration"
+    //         ],
+    //         ctaText: "Contact Sales",
+    //         ctaLink: "#betaprogram"
+    //     }
+    // ];
 
     return (
         <section className='py-20 bg-neutral-900' id='pricing'>

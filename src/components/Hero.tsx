@@ -1,16 +1,16 @@
 import React from 'react';
 
-interface StatItem {
-  value: string;
-  label: string;
-}
+// interface StatItem {
+//   value: string;
+//   label: string;
+// }
 
 const Hero: React.FC = () => {
-  const stats: StatItem[] = [
-    { value: '500+', label: 'Beta Signups' },
-    { value: '4.9/5', label: 'User Rating' },
-    { value: '98%', label: 'Time Saved' }
-  ];
+  // const stats: StatItem[] = [
+  //   { value: '500+', label: 'Beta Signups' },
+  //   { value: '4.9/5', label: 'User Rating' },
+  //   { value: '98%', label: 'Time Saved' }
+  // ];
 
   return (
 <section id="hero" className="min-h-[70vh] bg-neutral-900 relative overflow-hidden">

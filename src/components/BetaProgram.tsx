@@ -72,7 +72,8 @@ const BetaProgram: React.FC = () => {
 
             setSubmitStatus('success');
             setFormData({ name: '', email: '', company: '', useCase: '' });
-        } catch (error) {
+        } catch (err) {
+            console.error(err);
             setSubmitStatus('error');
         } finally {
             setIsLoading(false);
@@ -194,7 +195,7 @@ const BetaProgram: React.FC = () => {
 
                 {submitStatus === 'success' && (
                     <div className="mt-4 p-4 bg-green-800 text-white rounded-lg">
-                        Thank you for joining our beta program! We'll be in touch soon.
+                        Thank you for joining our beta program! We&apos;ll be in touch soon.
                     </div>
                 )}
 
@@ -217,7 +218,7 @@ const BetaProgram: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-white font-semibold mb-2">Early Access</h3>
-                            <p className="text-neutral-400">Be the first to try new features and shape the product's future</p>
+                            <p className="text-neutral-400">Be the first to try new features and shape the product&apos;s future</p>
                         </div>
                     </div>
 
